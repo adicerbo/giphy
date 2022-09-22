@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Gif from "./components/Gif";
+import Button from "./components/Button";
+import React, {useState} from "react";
 import './App.css';
 
 function App() {
+const apiKey = "dQCnxztdnfv24B7GncL18PsyBRZlEWHv";
+const gif = `api.giphy.com/v1/gifs/random?api_key=${apiKey}`;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button />
+      <Gif />
     </div>
   );
 }
