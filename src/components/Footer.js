@@ -1,3 +1,4 @@
+import React from "react";
 const Footer = () => {
     return (
         <h2>Pull Random Gifs from GIPHY</h2>
