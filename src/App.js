@@ -9,12 +9,12 @@ const App = () => {
   const [gif, setGif] = useState({});
 
   const handleSubmit = async () => {
-    const myKey = "W9ThL38OlmMnIif0P13v036495Y4OMVA";
-    const gif = `https://api.giphy.com/v1/gifs/random?api_key=${myKey}`;
+    const gif = "https://dog.ceo/api/breeds/image/random";
 
     let res = await fetch(gif);
     let json = await res.json();
-    setGif(json.data);
+    console.log(json)
+    setGif(json);
   };
 
   return (
@@ -22,7 +22,7 @@ const App = () => {
       <Title />
       <Footer />
       <Button handleSubmitFromApp={handleSubmit} /> 
-      <Gifs gif={gif} /> 
+      {gif.message ? <Gifs gif={gif} /> : <h2>Click button for dog</h2> }
     </div>
   );
 }

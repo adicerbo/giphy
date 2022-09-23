@@ -1,6 +1,6 @@
 const Title = () => {
     return(
-        <h1>Giphy</h1>
+        <h1>Doggies</h1>
     )
 };
 

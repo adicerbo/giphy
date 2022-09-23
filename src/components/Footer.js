@@ -1,7 +1,7 @@
 import React from "react";
 const Footer = () => {
     return (
-        <h2>Pull Random Gifs from GIPHY</h2>
+        <h2>Pull Random Dogs from DogAPI</h2>
     )
 };
 
